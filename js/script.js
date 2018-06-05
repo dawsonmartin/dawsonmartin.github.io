@@ -8,7 +8,7 @@ $(function(){
   scaleFix = function () {
     if (viewportmeta && /iPhone|iPad/.test(ua) && !/Opera Mini/.test(ua)) {
       viewportmeta.content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
-      document.addEventListener("gesturestart", gestureStart, false);
+      document.addEventListener("gesturestart", gestureStart, true);
     }
   };
   
@@ -50,3 +50,45 @@ var currentYear = (new Date).getFullYear();
   $(function(){
   $('.sf-menu').superfish({autoArrows: true})
 })
+
+
+
+
+
+
+$(function(){
+
+    var note = $('#note'),
+        ts = new Date(2018, 6, 19),
+        eventStart = true;
+
+    if((new Date()) > ts){
+        // The new year is here! Count towards something else.
+        // Notice the *1000 at the end - time must be in milliseconds
+        ts = (new Date()).getTime() + 10*24*60*60*1000;
+		eventStart = false;
+    }
+
+    $('#countdown').countdown({
+        timestamp   : ts,
+        callback    : function(days, hours, minutes, seconds){
+
+            var message = "";
+
+            message += days + " day" + ( days==1 ? '':'s' ) + ", ";
+            message += hours + " hour" + ( hours==1 ? '':'s' ) + ", ";
+            message += minutes + " minute" + ( minutes==1 ? '':'s' ) + " and ";
+            message += seconds + " second" + ( seconds==1 ? '':'s' ) + " <br />";
+
+            if(eventStart){
+                message += "left until the event starts!";
+            }
+            else {
+                message += "left to 10 days from now!";
+            }
+
+            note.html(message);
+        }
+    });
+
+});
