@@ -73,7 +73,7 @@ img {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Economica', sans-serif;
     font-weight: bold;
-	color: #86c8b4;
+	color: #8c30e1;
 }
 
 h2 {
@@ -133,7 +133,7 @@ ul {
     color: #fff;
     font-weight: bold;
     font-size: 24px;
-    background-color: #86c8b4;
+    background-color: #8c30e1;
     margin-top: 5px;
 }
 
@@ -176,14 +176,14 @@ a {
 }
 
 a:hover {
-	color: #86c8b4;
+	color: #8c30e1;
 }
 
 .btn {
     border-radius: 3px;
     margin-top: 18px;
     display: inline-block;
-    background-color: #86c8b4;
+    background-color: #8c30e1;
     padding: 6px 23px 7px;
     color: #fff;
     font: bold 18px/24px 'Open Sans Condensed', sans-serif;
@@ -395,7 +395,7 @@ header h1 a img {
 .news time span {
     margin-top: 3px;
     display: block;
-    background-color: #86c8b4;
+    background-color: #8c30e1;
     font-size: 22px;
     padding: 2px 0 3px;
 }
@@ -452,7 +452,7 @@ header h1 a img {
 /**Gallery**/
 
 a.gal {
-    background: url(../images/magnifier.png) center center no-repeat #86c8b4;
+    background: url(../images/magnifier.png) center center no-repeat #8c30e1;
     display: block;
 }
 
@@ -506,7 +506,7 @@ a.gal:hover img {
 /**Map**/
 
 .color1 {
-    color: #86c8b4;
+    color: #8c30e1;
 }
 
 .color1 a:hover , a.color1:hover {
