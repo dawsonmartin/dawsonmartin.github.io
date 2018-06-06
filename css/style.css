@@ -331,7 +331,7 @@ header h1 a img {
 }
 
 .socials .fa:hover {
-    background-color: #bfdfd5;
+    background-color: #ac57f9;
     -moz-transform: rotate(360deg); /* Для Firefox */
     -ms-transform: rotate(360deg); /* Для IE */
     -webkit-transform: rotate(360deg); /* Для Safari, Chrome, iOS */
@@ -356,7 +356,7 @@ header h1 a img {
 
 .box_title {
     color: #fff;
-    background-color: #d9c2ef;
+    background-color: #ac57f9;
     padding: 36px 0 39px;
     font: bold 48px/32px 'Economica', sans-serif;
 }
